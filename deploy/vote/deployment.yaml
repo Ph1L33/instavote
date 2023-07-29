@@ -3,6 +3,7 @@ kind: Deployment
 metadata:
   creationTimestamp: null
   labels:
+    tier: front
     app: vote
   name: vote
 spec:
@@ -15,6 +16,7 @@ spec:
     metadata:
       creationTimestamp: null
       labels:
+        tier: front
         app: vote
     spec:
       containers:
